@@ -1,23 +1,101 @@
----
-layout: default
----
-<h1>Hello, world!</h1>
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/updmfi.css" rel="stylesheet">
+  </head>
+  <body style="padding-top: 50px;">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+			  <a class="nav-link" href="">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Get Involved
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="#">Make a Donation</a></li>
+				<li><a class="dropdown-item" href="#">Donor Listing</a></li>
+			  </ul>
+			</li>			
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Contact
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="#">Officers</a></li>
+				<li><a class="dropdown-item" href="#">Math Homepage</a></li>
+			  </ul>
+			</li>			
+			<li class="nav-item">
+			  <a class="nav-link" href="#">News and Updates</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Books and Modules
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="#">Books</a></li>
+				<li><a class="dropdown-item" href="#">Modules</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>  
+	<div class="container-fluid">
+		<div class="row bg-image p-5 align-items-center"
+		style="background-repeat: no-repeat;
+					background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/background.jpg');
+					background-size: cover;
+					background-position: center;">
+			<div class="col-md-2">
+				<img class="header-logo" src="images/logo.png" alt="UP Diliman Mathematics Foundation, Inc." width="100%">
+			</div>
+			<div class="col-md-10 text-center logo-header">
+				<div class="text-white " href="#"><h1>UP Diliman Mathematics Foundation, Inc.</h1></div>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="border shadow rounded p-3 m-3">
+				
+		<p>
+The UP Diliman Mathematics Foundation, Inc. is a non-stock, non-profit corporation organized to assist the UP Diliman Institute of Mathematics in the realization of its objectives. The Foundation shall
+			<ul>
+<li>promote pure and applied mathematics research through professorial chairs and faculty grants,</li>
+<li>assist in the development of educational materials in mathematics,</li>
+<li>partner with the Institute in the conduct of training programs, conferences and seminars,</li>
+<li>raise funds for the establishment of scholarships and fellowships.</li>
+			</ul>
+		</p>
+		<p>
+The UPDMFI was registered with the Securities and Exchange Commission on October 9, 1989 with the following as incorporators: Ines G. Belleza, Leticia L. Castillo, Flor V. Cejalvo, Edgar E. Escultura, Rene P. Felix, Lydia H. Flores, Josefina C. Fonacier, Felina G. Mapa, Milagros P. Navarro, Honesto G. Nuqui, Rica G. Panganiban, Cristina P. Parel, Fe N. Reyes, Jesusa T. Tangco and Romulo A. Virola.
+		</p>
+		<p>
+Through the generosity of its donors, the Foundation is able to award the following:
+			<ul>
+<li>Felina G. Mapa Chair</li>
+<li>Raymundo A. Favila Chair</li>
+<li>Mel Bryant Dulam Chair</li>
+<li>Lorna Evidente Grant</li>
+<li>Ernesto Santos and Remedios David-Santos Meritorious Service Award</li>
+<li>Director's Service Award</li>
+			</ul>
+		</p>				
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
