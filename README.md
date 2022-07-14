@@ -1,4 +1,1 @@
-example
-=======
-
-Jekyll example Project site
+UPDMFI website built with Jekyll
